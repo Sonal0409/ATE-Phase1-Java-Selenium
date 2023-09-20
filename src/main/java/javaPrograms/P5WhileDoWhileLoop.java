@@ -1,5 +1,7 @@
 package javaPrograms;
 
+import java.util.Scanner;
+
 public class P5WhileDoWhileLoop {
 
 	public static void main(String[] args) {
@@ -17,14 +19,18 @@ public class P5WhileDoWhileLoop {
 while (condition){    
 //code to be executed   
 I ncrement / decrement statement  
-}  
-		 */
+}  */
 		
-		    int i=1;   
-		    while(i<=10){  
-		        System.out.println(i);  
-		    i++;  
-		    }  
+		int pin_DB = 1234;
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Enter the valid pin number");
+		int pin_entered_user = scan.nextInt();
+		while(pin_DB!=pin_entered_user)
+		{
+			System.out.println("The ATM pin entered is not correct. Please try again");
+			pin_entered_user = scan.nextInt();
+		}
+		System.out.println("Welcome to ABC bank");
 
 	/*  DO WHILE LOOP
 	 =================================
@@ -42,13 +48,13 @@ do{
 //code to be executed / loop body  
 //update statement   
 }while (condition);    
-	 */
+	 /*
 		    
 		    int j=1;    
 		    do{    
 		        System.out.println(j);    
 		    j++;    
-		    }while(j<=10);   	    
+		    }while(j<=10);   */	    
 		    
 		    
 		    
