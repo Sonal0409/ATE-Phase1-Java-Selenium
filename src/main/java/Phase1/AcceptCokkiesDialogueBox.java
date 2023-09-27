@@ -22,7 +22,6 @@ public class AcceptCokkiesDialogueBox {
 		
 		driver.get("https://www.opera.com/download");
 		
-		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Accept cookies')]")));
 		
